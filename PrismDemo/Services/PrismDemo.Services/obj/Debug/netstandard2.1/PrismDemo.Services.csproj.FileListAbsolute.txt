@@ -1,0 +1,13 @@
+D:\demo\PrismDemo\PrismDemo\Services\PrismDemo.Services\bin\Debug\netstandard2.1\PrismDemo.Services.deps.json
+D:\demo\PrismDemo\PrismDemo\Services\PrismDemo.Services\bin\Debug\netstandard2.1\PrismDemo.Services.dll
+D:\demo\PrismDemo\PrismDemo\Services\PrismDemo.Services\bin\Debug\netstandard2.1\PrismDemo.Services.pdb
+D:\demo\PrismDemo\PrismDemo\Services\PrismDemo.Services\bin\Debug\netstandard2.1\PrismDemo.Services.Interfaces.dll
+D:\demo\PrismDemo\PrismDemo\Services\PrismDemo.Services\bin\Debug\netstandard2.1\PrismDemo.Services.Interfaces.pdb
+D:\demo\PrismDemo\PrismDemo\Services\PrismDemo.Services\obj\Debug\netstandard2.1\PrismDemo.Services.csproj.AssemblyReference.cache
+D:\demo\PrismDemo\PrismDemo\Services\PrismDemo.Services\obj\Debug\netstandard2.1\PrismDemo.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\demo\PrismDemo\PrismDemo\Services\PrismDemo.Services\obj\Debug\netstandard2.1\PrismDemo.Services.AssemblyInfoInputs.cache
+D:\demo\PrismDemo\PrismDemo\Services\PrismDemo.Services\obj\Debug\netstandard2.1\PrismDemo.Services.AssemblyInfo.cs
+D:\demo\PrismDemo\PrismDemo\Services\PrismDemo.Services\obj\Debug\netstandard2.1\PrismDemo.Services.csproj.CoreCompileInputs.cache
+D:\demo\PrismDemo\PrismDemo\Services\PrismDemo.Services\obj\Debug\netstandard2.1\PrismDemo.Services.csproj.CopyComplete
+D:\demo\PrismDemo\PrismDemo\Services\PrismDemo.Services\obj\Debug\netstandard2.1\PrismDemo.Services.dll
+D:\demo\PrismDemo\PrismDemo\Services\PrismDemo.Services\obj\Debug\netstandard2.1\PrismDemo.Services.pdb

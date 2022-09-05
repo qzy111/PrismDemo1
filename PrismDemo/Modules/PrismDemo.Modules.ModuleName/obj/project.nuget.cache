@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "uvRMiLQvzwyUU33mwPnR9P2ywetuY7pL7Y2/g3Gxzdfks5MbCETotwmjrSclPi12S3PNz7EclNTPxtQBL/sVYA==",
+  "success": true,
+  "projectFilePath": "D:\\demo\\PrismDemo\\PrismDemo\\Modules\\PrismDemo.Modules.ModuleName\\PrismDemo.Modules.ModuleName.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.31\\microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\prism.wpf\\8.1.97\\prism.wpf.8.1.97.nupkg.sha512"
+  ],
+  "logs": []
+}

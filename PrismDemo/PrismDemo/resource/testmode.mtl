@@ -1,0 +1,14 @@
+#
+## Alias OBJ Material File
+# Exported from SketchUp, (c) 2000-2012 Trimble Navigation Limited
+
+newmtl _Concrete_Form_4x8_1
+Ka 0.000000 0.000000 0.000000
+Kd 0.705882 0.733333 0.709804
+Ks 0.330000 0.330000 0.330000
+
+newmtl Color_006
+Ka 0.000000 0.000000 0.000000
+Kd 0.337255 0.337255 0.337255
+Ks 0.330000 0.330000 0.330000
+

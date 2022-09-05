@@ -1,0 +1,12 @@
+D:\demo\PrismDemo\PrismDemo\PrismDemo.Core\bin\Debug\net6.0-windows\PrismDemo.Core.deps.json
+D:\demo\PrismDemo\PrismDemo\PrismDemo.Core\bin\Debug\net6.0-windows\PrismDemo.Core.dll
+D:\demo\PrismDemo\PrismDemo\PrismDemo.Core\bin\Debug\net6.0-windows\PrismDemo.Core.pdb
+D:\demo\PrismDemo\PrismDemo\PrismDemo.Core\obj\Debug\net6.0-windows\PrismDemo.Core.csproj.AssemblyReference.cache
+D:\demo\PrismDemo\PrismDemo\PrismDemo.Core\obj\Debug\net6.0-windows\PrismDemo.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\demo\PrismDemo\PrismDemo\PrismDemo.Core\obj\Debug\net6.0-windows\PrismDemo.Core.AssemblyInfoInputs.cache
+D:\demo\PrismDemo\PrismDemo\PrismDemo.Core\obj\Debug\net6.0-windows\PrismDemo.Core.AssemblyInfo.cs
+D:\demo\PrismDemo\PrismDemo\PrismDemo.Core\obj\Debug\net6.0-windows\PrismDemo.Core.csproj.CoreCompileInputs.cache
+D:\demo\PrismDemo\PrismDemo\PrismDemo.Core\obj\Debug\net6.0-windows\PrismDemo.Core.dll
+D:\demo\PrismDemo\PrismDemo\PrismDemo.Core\obj\Debug\net6.0-windows\refint\PrismDemo.Core.dll
+D:\demo\PrismDemo\PrismDemo\PrismDemo.Core\obj\Debug\net6.0-windows\PrismDemo.Core.pdb
+D:\demo\PrismDemo\PrismDemo\PrismDemo.Core\obj\Debug\net6.0-windows\ref\PrismDemo.Core.dll

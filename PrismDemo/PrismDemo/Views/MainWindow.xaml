@@ -1,0 +1,83 @@
+﻿<mah:MetroWindow x:Class="PrismDemo.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prism="http://prismlibrary.com/"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        xmlns:controlzEx="urn:controlzex" 
+        xmlns:core="clr-namespace:PrismDemo.Core;assembly=PrismDemo.Core"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" 
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        Title="{Binding Title}" Height="350" Width="525" >
+    <Window.Resources>
+        <ObjectDataProvider x:Key="SyncModePreferenceEnumValues"
+                                MethodName="GetValues"
+                                ObjectType="{x:Type controlzEx:ThemeSyncMode}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="controlzEx:ThemeSyncMode" />
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+        <Ellipse x:Key="AccentMenuIcon"
+                     Width="16"
+                     Height="16"
+                     x:Shared="False"
+                     Fill="{Binding ColorBrush, Mode=OneWay}" />
+        <Style x:Key="tabitemstyle" TargetType="TabItem" BasedOn="{StaticResource  MahApps.Styles.TabItem}">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="Width" Value="200"/>
+        </Style>
+        <Style x:Key="tabcontrolstyle" TargetType="TabControl" BasedOn="{StaticResource MahApps.Styles.TabControl}">
+            <Setter Property="Width" Value="400"/>
+        </Style>
+        <Style x:Key="AppThemeMenuItemStyle"
+                   BasedOn="{StaticResource MahApps.Styles.MenuItem}"
+                   TargetType="{x:Type MenuItem}">
+            <Setter Property="Command" Value="{Binding ChangeAccentCommand}" />
+            <Setter Property="CommandParameter" Value="{Binding Name, Mode=OneWay}" />
+            <Setter Property="Header" Value="{Binding Name, Mode=OneWay}" />
+        </Style>
+
+        <Style x:Key="AccentColorMenuItemStyle"
+                   BasedOn="{StaticResource MahApps.Styles.MenuItem}"
+                   TargetType="{x:Type MenuItem}">
+            <Setter Property="Command" Value="{Binding ChangeAccentCommand}" />
+            <Setter Property="CommandParameter" Value="{Binding Name, Mode=OneWay}" />
+            <Setter Property="Header" Value="{Binding Name, Mode=OneWay}" />
+            <Setter Property="Icon" Value="{StaticResource AccentMenuIcon}" />
+        </Style>
+    </Window.Resources>
+    <mah:MetroWindow.LeftWindowCommands>
+        <mah:WindowCommands>
+            <Button Click="LaunchMahAppsOnGitHub" ToolTip="MahApps.Metro on GitHub">
+                <iconPacks:PackIconModern Width="22"
+                                          Height="22"
+                                          Kind="SocialGithubOctocat" />
+            </Button>
+        </mah:WindowCommands>
+    </mah:MetroWindow.LeftWindowCommands>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <Menu Grid.Row="0" Grid.ColumnSpan="2"
+              Margin="5"
+              HorizontalAlignment="Left"
+              VerticalAlignment="Stretch">
+
+            <MenuItem Header="Accent"
+                      ItemContainerStyle="{StaticResource AccentColorMenuItemStyle}"
+                      ItemsSource="{Binding AccentColors, Mode=OneWay}" />
+        </Menu>
+        <Menu DockPanel.Dock="Top" Grid.Row="1" Grid.Column="0">
+            <MenuItem Name="file" Click="File_Click" Header="页面1"></MenuItem>
+            <MenuItem Name="file2" Click="File2_Click" Header="页面2"></MenuItem>
+        </Menu>
+        <ContentControl Grid.Row="1" Grid.Column="1" prism:RegionManager.RegionName="ContentRegion1" />
+        <!--<load3dmodel:CustomElement x:Name="dep" Dep="123"></load3dmodel:CustomElement>-->
+    </Grid>
+</mah:MetroWindow>
