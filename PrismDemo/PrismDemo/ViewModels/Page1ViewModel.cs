@@ -14,7 +14,7 @@ using System.Windows.Media;
 
 namespace PrismDemo.ViewModels
 {
-    public class Page1ViewModel : BindableBase, INotifyPropertyChanged
+    public class Page1ViewModel : BindableBase
     {
         public DelegateCommand ClickCommd { get; set; }
         public Page1ViewModel()
@@ -34,8 +34,7 @@ namespace PrismDemo.ViewModels
             {
                 if (translateValue != value)
                 {
-                    translateValue = value;
-                    this.OnPropertyChanged();
+                    SetProperty(ref translateValue, value);
 
                 }
             }
@@ -50,8 +49,7 @@ namespace PrismDemo.ViewModels
                 {
                     string nameOfTheColor = MahApps.Metro.Controls.ColorHelper.GetColorName(value);
                     CubeColor = nameOfTheColor.Split("(")[0].Replace(" ", "");
-                    color = value;
-                    this.OnPropertyChanged();
+                    SetProperty(ref color, value);
                 }
             }
         }
@@ -63,30 +61,29 @@ namespace PrismDemo.ViewModels
             {
                 if (cubeColor != value)
                 {
-                    cubeColor = value;
-                    this.OnPropertyChanged();
+                    SetProperty(ref cubeColor, value);
 
                 }
             }
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        //public event PropertyChangedEventHandler PropertyChanged;
 
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
+        //protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        //{
+        //    this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        //}
 
-        protected bool SetProperty<T>(ref T field, T newValue, [CallerMemberName] string propertyName = null)
-        {
-            if (!Equals(field, newValue))
-            {
-                field = newValue;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-                return true;
-            }
+        //protected bool SetProperty<T>(ref T field, T newValue, [CallerMemberName] string propertyName = null)
+        //{
+        //    if (!Equals(field, newValue))
+        //    {
+        //        field = newValue;
+        //        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        //        return true;
+        //    }
 
-            return false;
-        }
+        //    return false;
+        //}
     }
 }

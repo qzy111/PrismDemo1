@@ -87,7 +87,6 @@ D:\demo\PrismDemo\PrismDemo\PrismDemo\bin\Debug\net6.0-windows\resource\testmode
 D:\demo\PrismDemo\PrismDemo\PrismDemo\bin\Debug\net6.0-windows\resource\VWBus.3ds
 D:\Demo\PrismDemo\PrismDemo1\PrismDemo\PrismDemo\bin\Debug\net6.0-windows\resource\Astronaut.3ds
 D:\Demo\PrismDemo\PrismDemo1\PrismDemo\PrismDemo\bin\Debug\net6.0-windows\resource\brage.mtl
-D:\Demo\PrismDemo\PrismDemo1\PrismDemo\PrismDemo\bin\Debug\net6.0-windows\resource\elizabeth-olsen.jpg
 D:\Demo\PrismDemo\PrismDemo1\PrismDemo\PrismDemo\bin\Debug\net6.0-windows\resource\Pharaoh (3Stars).obj
 D:\Demo\PrismDemo\PrismDemo1\PrismDemo\PrismDemo\bin\Debug\net6.0-windows\resource\testmode.mtl
 D:\Demo\PrismDemo\PrismDemo1\PrismDemo\PrismDemo\bin\Debug\net6.0-windows\resource\testmode.obj
