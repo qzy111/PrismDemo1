@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7ghdUTD4dhKuTZdcIQVhWMjL+dI1LsD1dpvmMCXyxVwEOaLHZXu1IW1DxJUUJUxmNpE4AtemRdz9V/SsQqmifg==",
+  "dgSpecHash": "WjzkRgfRX3MMPmnaAvYZndML9XkSHqYGltK0DTO5K016mv7JV0IEag84dzh5x/nzaIKHc0k1gDcxXggMF6+H1g==",
   "success": true,
-  "projectFilePath": "D:\\demo\\PrismDemo\\PrismDemo\\Tests\\PrismDemo.Modules.ModuleName.Tests\\PrismDemo.Modules.ModuleName.Tests.csproj",
+  "projectFilePath": "D:\\Demo\\PrismDemo\\PrismDemo1\\PrismDemo\\Tests\\PrismDemo.Modules.ModuleName.Tests\\PrismDemo.Modules.ModuleName.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\controlzex\\4.4.0\\controlzex.4.4.0.nupkg.sha512",

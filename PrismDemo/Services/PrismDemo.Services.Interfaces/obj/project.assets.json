@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\demo\\PrismDemo\\PrismDemo\\Services\\PrismDemo.Services.Interfaces\\PrismDemo.Services.Interfaces.csproj",
+      "projectUniqueName": "D:\\Demo\\PrismDemo\\PrismDemo1\\PrismDemo\\Services\\PrismDemo.Services.Interfaces\\PrismDemo.Services.Interfaces.csproj",
       "projectName": "PrismDemo.Services.Interfaces",
-      "projectPath": "D:\\demo\\PrismDemo\\PrismDemo\\Services\\PrismDemo.Services.Interfaces\\PrismDemo.Services.Interfaces.csproj",
+      "projectPath": "D:\\Demo\\PrismDemo\\PrismDemo1\\PrismDemo\\Services\\PrismDemo.Services.Interfaces\\PrismDemo.Services.Interfaces.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\demo\\PrismDemo\\PrismDemo\\Services\\PrismDemo.Services.Interfaces\\obj\\",
+      "outputPath": "D:\\Demo\\PrismDemo\\PrismDemo1\\PrismDemo\\Services\\PrismDemo.Services.Interfaces\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",

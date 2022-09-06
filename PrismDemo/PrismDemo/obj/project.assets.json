@@ -1765,11 +1765,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\demo\\PrismDemo\\PrismDemo\\PrismDemo\\PrismDemo.csproj",
+      "projectUniqueName": "D:\\Demo\\PrismDemo\\PrismDemo1\\PrismDemo\\PrismDemo\\PrismDemo.csproj",
       "projectName": "PrismDemo",
-      "projectPath": "D:\\demo\\PrismDemo\\PrismDemo\\PrismDemo\\PrismDemo.csproj",
+      "projectPath": "D:\\Demo\\PrismDemo\\PrismDemo1\\PrismDemo\\PrismDemo\\PrismDemo.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "D:\\demo\\PrismDemo\\PrismDemo\\PrismDemo\\obj\\",
+      "outputPath": "D:\\Demo\\PrismDemo\\PrismDemo1\\PrismDemo\\PrismDemo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1786,17 +1786,17 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "D:\\demo\\PrismDemo\\PrismDemo\\Modules\\PrismDemo.Modules.ModuleName\\PrismDemo.Modules.ModuleName.csproj": {
-              "projectPath": "D:\\demo\\PrismDemo\\PrismDemo\\Modules\\PrismDemo.Modules.ModuleName\\PrismDemo.Modules.ModuleName.csproj"
+            "D:\\Demo\\PrismDemo\\PrismDemo1\\PrismDemo\\Modules\\PrismDemo.Modules.ModuleName\\PrismDemo.Modules.ModuleName.csproj": {
+              "projectPath": "D:\\Demo\\PrismDemo\\PrismDemo1\\PrismDemo\\Modules\\PrismDemo.Modules.ModuleName\\PrismDemo.Modules.ModuleName.csproj"
             },
-            "D:\\demo\\PrismDemo\\PrismDemo\\PrismDemo.Core\\PrismDemo.Core.csproj": {
-              "projectPath": "D:\\demo\\PrismDemo\\PrismDemo\\PrismDemo.Core\\PrismDemo.Core.csproj"
+            "D:\\Demo\\PrismDemo\\PrismDemo1\\PrismDemo\\PrismDemo.Core\\PrismDemo.Core.csproj": {
+              "projectPath": "D:\\Demo\\PrismDemo\\PrismDemo1\\PrismDemo\\PrismDemo.Core\\PrismDemo.Core.csproj"
             },
-            "D:\\demo\\PrismDemo\\PrismDemo\\Services\\PrismDemo.Services.Interfaces\\PrismDemo.Services.Interfaces.csproj": {
-              "projectPath": "D:\\demo\\PrismDemo\\PrismDemo\\Services\\PrismDemo.Services.Interfaces\\PrismDemo.Services.Interfaces.csproj"
+            "D:\\Demo\\PrismDemo\\PrismDemo1\\PrismDemo\\Services\\PrismDemo.Services.Interfaces\\PrismDemo.Services.Interfaces.csproj": {
+              "projectPath": "D:\\Demo\\PrismDemo\\PrismDemo1\\PrismDemo\\Services\\PrismDemo.Services.Interfaces\\PrismDemo.Services.Interfaces.csproj"
             },
-            "D:\\demo\\PrismDemo\\PrismDemo\\Services\\PrismDemo.Services\\PrismDemo.Services.csproj": {
-              "projectPath": "D:\\demo\\PrismDemo\\PrismDemo\\Services\\PrismDemo.Services\\PrismDemo.Services.csproj"
+            "D:\\Demo\\PrismDemo\\PrismDemo1\\PrismDemo\\Services\\PrismDemo.Services\\PrismDemo.Services.csproj": {
+              "projectPath": "D:\\Demo\\PrismDemo\\PrismDemo1\\PrismDemo\\Services\\PrismDemo.Services\\PrismDemo.Services.csproj"
             }
           }
         }
