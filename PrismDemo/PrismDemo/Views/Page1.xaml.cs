@@ -1,4 +1,6 @@
 ﻿using HelixToolkit.Wpf;
+using Prism.Mvvm;
+using PrismDemo.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,7 +26,7 @@ namespace PrismDemo.Views
     /// </summary>
     public partial class Page1 : UserControl
     {
-        Move m = new Move();
+        Page1ViewModel m = new Page1ViewModel();
         readonly ModelImporter import = new();//导入模型的类对象
         public Page1()
         {
@@ -48,78 +50,13 @@ namespace PrismDemo.Views
             }
             model.Content = g1;
             model1.Content = g2;
-            this.DataContext = m;
+            //this.DataContext = m;
 
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             m.CubeColor = "Purple";
-        }
-    }
-    public class Move : INotifyPropertyChanged
-    {
-        private double translateValue;
-        public double TranslateValue
-        {
-            get { return translateValue; }
-            set
-            {
-                if (translateValue != value)
-                {
-                    translateValue = value;
-                    this.OnPropertyChanged();
-
-                }
-            }
-        }
-        private Color color;
-        public Color Color
-        {
-            get { return color; }
-            set
-            {
-                if (color != value)
-                {
-                    string nameOfTheColor = MahApps.Metro.Controls.ColorHelper.GetColorName(value);
-                    CubeColor = nameOfTheColor.Split("(")[0].Replace(" ", "");
-                    color = value;
-                    this.OnPropertyChanged();
-                }
-            }
-        }
-        private string cubeColor = "Red";
-        public string CubeColor
-        {
-            get { return cubeColor; }
-            set
-            {
-                if (cubeColor != value)
-                {
-                    cubeColor = value;
-                    this.OnPropertyChanged();
-
-                }
-            }
-        }   
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
-        protected bool SetProperty<T>(ref T field, T newValue, [CallerMemberName] string propertyName = null)
-        {
-            if (!Equals(field, newValue))
-            {
-                field = newValue;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-                return true;
-            }
-
-            return false;
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2mk+aJ/dJhi76Huk1Vu/wqVj//yn5B/+9LSDjIajuem6xfF6/nWuRB+mRmG0qln42INrB9T5LoZHbe9mocoQkQ==",
+  "dgSpecHash": "KkjPpR+va63avEXeM63lzyqNwJr+YF/CJ/R7e8eD3sgfJHJ4BCajGS3c+zLPkxr6aSEzTgcAz/whdcxd6jqi4w==",
   "success": true,
-  "projectFilePath": "D:\\demo\\PrismDemo\\PrismDemo\\PrismDemo\\PrismDemo.csproj",
+  "projectFilePath": "D:\\Demo\\PrismDemo\\PrismDemo1\\PrismDemo\\PrismDemo\\PrismDemo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\controlzex\\4.4.0\\controlzex.4.4.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\helixtoolkit\\2.22.0\\helixtoolkit.2.22.0.nupkg.sha512",

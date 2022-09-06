@@ -72,12 +72,14 @@
             <MenuItem Header="Accent"
                       ItemContainerStyle="{StaticResource AccentColorMenuItemStyle}"
                       ItemsSource="{Binding AccentColors, Mode=OneWay}" />
+            <MenuItem Header="{Binding MenuTitle}" />
+
         </Menu>
         <Menu DockPanel.Dock="Top" Grid.Row="1" Grid.Column="0">
             <MenuItem Name="file" Click="File_Click" Header="页面1"></MenuItem>
             <MenuItem Name="file2" Click="File2_Click" Header="页面2"></MenuItem>
         </Menu>
-        <ContentControl Grid.Row="1" Grid.Column="1" prism:RegionManager.RegionName="ContentRegion1" />
+        <ContentControl Grid.Row="1" Grid.Column="1" Name="contentControl1" prism:RegionManager.RegionName="ContentRegion1" />
         <!--<load3dmodel:CustomElement x:Name="dep" Dep="123"></load3dmodel:CustomElement>-->
     </Grid>
 </mah:MetroWindow>
