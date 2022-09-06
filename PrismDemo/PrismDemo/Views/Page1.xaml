@@ -6,6 +6,8 @@
              xmlns:local="clr-namespace:PrismDemo.Views" 
              xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" 
              xmlns:helix="http://helix-toolkit.org/wpf"
+             xmlns:prism="http://prismlibrary.com/"
+             prism:ViewModelLocator.AutoWireViewModel="True"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800" Background="White">
     <UserControl.Resources>
@@ -38,6 +40,7 @@
 
                     </mah:ColorPicker>
                     <Button Style="{DynamicResource MahApps.Styles.Button.Circle}" Height="70" Width="70" Click="Button_Click">点击</Button>
+                    <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Command="{Binding ClickCommd}">命令执行</Button>
                 </StackPanel>
             </GroupBox>
         </StackPanel>

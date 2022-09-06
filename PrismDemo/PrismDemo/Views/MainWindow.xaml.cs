@@ -35,8 +35,12 @@ namespace PrismDemo.Views
             {
                 dic_control.Add("page1", new Page1());
             }
-            //contentControl1.Content = dic_control["page1"];
-            _regionManager.RegisterViewWithRegion("ContentRegion1", typeof(Page1));
+            contentControl1.Content = dic_control["page1"];
+            //if (_regionManager.Regions["ContentRegion1"].Views.Contains(typeof(Page2))) {
+            //    _regionManager.Regions["ContentRegion1"].Remove(typeof(Page2));
+            //}
+            
+            //_regionManager.RegisterViewWithRegion("ContentRegion1", typeof(Page1));
             //MessageBox.Show(dep.Dep.ToString());
         }
 
@@ -46,8 +50,12 @@ namespace PrismDemo.Views
             {
                 dic_control.Add("page2", new Page2());
             }
-            _regionManager.AddToRegion("ContentRegion1", typeof(Page2));
-            //contentControl1.Content = dic_control["page2"];
+            if (_regionManager.Regions["ContentRegion1"].Views.Contains(typeof(Page1)))
+            {
+                _regionManager.Regions["ContentRegion1"].Remove(typeof(Page1));
+            }
+            //_regionManager.RegisterViewWithRegion("ContentRegion1", typeof(Page2));
+            contentControl1.Content = dic_control["page2"];
             //dep.Dep = new Thickness(4);
         }
     }

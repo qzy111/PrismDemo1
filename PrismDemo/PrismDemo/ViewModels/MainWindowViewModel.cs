@@ -16,7 +16,12 @@ namespace PrismDemo.ViewModels
             get { return _title; }
             set { SetProperty(ref _title, value); }
         }
-
+        private string menuTitle = "menu";
+        public string MenuTitle
+        {
+            get { return menuTitle; }
+            set { SetProperty(ref menuTitle, value); }
+        }
         public MainWindowViewModel()
         {
             this.AccentColors = ThemeManager.Current.Themes
@@ -42,7 +47,7 @@ namespace PrismDemo.ViewModels
 
         public ICommand ChangeAccentCommand { get; }
 
-        protected virtual void DoChangeTheme(string? name)
+        protected virtual void DoChangeTheme(string name)
         {
             if (name is not null)
             {
