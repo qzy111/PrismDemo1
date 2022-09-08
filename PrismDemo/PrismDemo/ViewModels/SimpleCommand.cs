@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,6 +8,7 @@ using System.Windows.Input;
 
 namespace PrismDemo.ViewModels
 {
+    [CustomAttribute("张三", Comment = "这是一个测试例子")]
     public class SimpleCommand<T> : ICommand
     {
         public SimpleCommand(Func<T, bool> canExecute = null, Action<T> execute = null)

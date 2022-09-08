@@ -5,14 +5,15 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="FreeSql" Version="3.2.669" />
+    <PackageReference Include="FreeSql.Provider.MySql" Version="3.2.669" />
     <PackageReference Include="HelixToolkit.Core.Wpf" Version="2.22.0" />
     <PackageReference Include="MahApps.Metro" Version="2.4.9" />
     <PackageReference Include="MahApps.Metro.IconPacks" Version="4.11.0" />
     <PackageReference Include="Prism.Unity" Version="8.1.97" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Modules\PrismDemo.Modules.ModuleName\PrismDemo.Modules.ModuleName.csproj" />
-    <ProjectReference Include="..\PrismDemo.Core\PrismDemo.Core.csproj" />
+    <ProjectReference Include="..\..\FreeSQL\FreeSQLHelper.csproj" />
     <ProjectReference Include="..\Services\PrismDemo.Services.Interfaces\PrismDemo.Services.Interfaces.csproj" />
     <ProjectReference Include="..\Services\PrismDemo.Services\PrismDemo.Services.csproj" />
   </ItemGroup>

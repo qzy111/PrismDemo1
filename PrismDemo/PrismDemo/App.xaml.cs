@@ -1,7 +1,6 @@
 ﻿using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Mvvm;
-using PrismDemo.Modules.ModuleName;
 using PrismDemo.Services;
 using PrismDemo.Services.Interfaces;
 using PrismDemo.Views;
@@ -16,19 +15,12 @@ namespace PrismDemo
     /// </summary>
     public partial class App
     {
-        protected override Window CreateShell()
+        protected override void OnStartup(StartupEventArgs e)
         {
-            return Container.Resolve<MainWindow>();
-        }
+            base.OnStartup(e);
 
-        protected override void RegisterTypes(IContainerRegistry containerRegistry)
-        {
-            containerRegistry.RegisterSingleton<IMessageService, MessageService>();
-        }
-
-        protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
-        {
-            moduleCatalog.AddModule<ModuleNameModule>();
+            var bootstrapper = new Bootstrapper();
+            bootstrapper.Run();
         }
     }
 }

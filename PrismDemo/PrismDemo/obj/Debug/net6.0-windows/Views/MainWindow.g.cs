@@ -34,7 +34,6 @@ using Prism.Regions;
 using Prism.Regions.Behaviors;
 using Prism.Services.Dialogs;
 using Prism.Unity;
-using PrismDemo.Core;
 using System;
 using System.Diagnostics;
 using System.Windows;
