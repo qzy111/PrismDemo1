@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\Demo\PrismDemo\PrismDemo1\PrismDemo\Modules\PrismDemo.Modules.ModuleName\obj\Debug\net6.0-windows\
+D:\demo\PrismDemo\PrismDemo\Modules\PrismDemo.Modules.ModuleName\obj\Debug\net6.0-windows\
 PrismDemo.Modules.ModuleName
 none
 false
@@ -13,8 +13,8 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 1-255015040
 
 5-1753676185
-199348802608
+1991995060178
 Views\ViewA.xaml;
 
-False
+True
 

@@ -59,7 +59,7 @@ namespace PrismDemo.Modules.ModuleName.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PrismDemo.Modules.ModuleName;component/views/viewa.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PrismDemo.Modules.ModuleName;V1.0.0.0;component/views/viewa.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\ViewA.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

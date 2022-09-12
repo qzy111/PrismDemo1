@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Demo\PrismDemo\PrismDemo1\PrismDemo\PrismDemo\obj\Debug\net6.0-windows\
+D:\demo\PrismDemo\PrismDemo\PrismDemo\obj\Debug\net6.0-windows\
 PrismDemo
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-D:\Demo\PrismDemo\PrismDemo1\PrismDemo\PrismDemo\App.xaml
+D:\demo\PrismDemo\PrismDemo\PrismDemo\App.xaml
 3-1284877801
 
 101245691791
-2421850947194
+242-1653898417
 Views\MainWindow.xaml;Views\Page1.xaml;Views\Page2.xaml;
 
-False
+True
 
