@@ -1,3 +1,6 @@
 [Bb]in/
 .vs/
-/PrismDemo/PrismDemo/obj/Debug/net6.0-windows
+/PrismDemo/PrismDemo/obj
+/FreeSQL/obj
+/PrismDemo/Services/PrismDemo.Services/obj
+/PrismDemo/Services/PrismDemo.Services.Interfaces/obj
