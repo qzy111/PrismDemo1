@@ -1,4 +1,5 @@
 ﻿using Prism.Commands;
+using Prism.Ioc;
 using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
@@ -11,16 +12,20 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media;
+using FreeSQLHelper;
 
 namespace PrismDemo.ViewModels
 {
     public class Page1ViewModel : BindableBase
     {
+        private readonly IFreeSql freeSql;
         public DelegateCommand ClickCommd { get; set; }
-        public Page1ViewModel()
+        public Page1ViewModel(IContainerExtension container)
         {
+            freeSql = container.Resolve<Init>().GetInstance();
             ClickCommd = new DelegateCommand(ClickCommdExecute);
         }
+        public Page1ViewModel() { }
         private void ClickCommdExecute()
         {
             MessageBox.Show("命令执行");

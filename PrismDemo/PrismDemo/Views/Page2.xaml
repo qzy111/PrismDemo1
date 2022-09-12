@@ -9,7 +9,6 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Margin="0 0 0 0">
-        <TextBox Text="{Binding Name}"></TextBox>
-        <Image Name="img" Margin="0 0 0 0" Source="..\resource\elizabeth-olsen.jpg" />
+        <DataGrid ItemsSource="{Binding TaskList}" Style="{StaticResource MahApps.Styles.DataGrid.Azure}"/>
     </Grid>
 </UserControl>

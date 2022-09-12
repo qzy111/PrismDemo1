@@ -51,22 +51,6 @@
           "Microsoft.WindowsDesktop.App.WPF"
         ]
       },
-      "PrismDemo.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Prism.Wpf": "8.1.97"
-        },
-        "compile": {
-          "bin/placeholder/PrismDemo.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/PrismDemo.Core.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WPF"
-        ]
-      },
       "PrismDemo.Services.Interfaces/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
@@ -157,11 +141,6 @@
         "readme.txt"
       ]
     },
-    "PrismDemo.Core/1.0.0": {
-      "type": "project",
-      "path": "../../PrismDemo.Core/PrismDemo.Core.csproj",
-      "msbuildProject": "../../PrismDemo.Core/PrismDemo.Core.csproj"
-    },
     "PrismDemo.Services.Interfaces/1.0.0": {
       "type": "project",
       "path": "../../Services/PrismDemo.Services.Interfaces/PrismDemo.Services.Interfaces.csproj",
@@ -171,7 +150,6 @@
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "Prism.Wpf >= 8.1.97",
-      "PrismDemo.Core >= 1.0.0",
       "PrismDemo.Services.Interfaces >= 1.0.0"
     ]
   },
@@ -202,9 +180,6 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "D:\\Demo\\PrismDemo\\PrismDemo1\\PrismDemo\\PrismDemo.Core\\PrismDemo.Core.csproj": {
-              "projectPath": "D:\\Demo\\PrismDemo\\PrismDemo1\\PrismDemo\\PrismDemo.Core\\PrismDemo.Core.csproj"
-            },
             "D:\\Demo\\PrismDemo\\PrismDemo1\\PrismDemo\\Services\\PrismDemo.Services.Interfaces\\PrismDemo.Services.Interfaces.csproj": {
               "projectPath": "D:\\Demo\\PrismDemo\\PrismDemo1\\PrismDemo\\Services\\PrismDemo.Services.Interfaces\\PrismDemo.Services.Interfaces.csproj"
             }

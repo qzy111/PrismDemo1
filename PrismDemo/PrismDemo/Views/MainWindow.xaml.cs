@@ -1,11 +1,12 @@
 ﻿using MahApps.Metro.Controls;
 using Prism.Ioc;
 using Prism.Regions;
-using PrismDemo.Modules.ModuleName.Views;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
+using FreeSQLHelper;
+using PrismDemo.Models;
 
 namespace PrismDemo.Views
 {
@@ -17,6 +18,7 @@ namespace PrismDemo.Views
         Dictionary<string, UserControl> dic_control = new Dictionary<string, UserControl>();
         IContainerExtension _container;
         IRegionManager _regionManager;
+
         public MainWindow(IContainerExtension container, IRegionManager regionManager)
         {
             InitializeComponent();
@@ -39,7 +41,7 @@ namespace PrismDemo.Views
             //if (_regionManager.Regions["ContentRegion1"].Views.Contains(typeof(Page2))) {
             //    _regionManager.Regions["ContentRegion1"].Remove(typeof(Page2));
             //}
-            
+
             //_regionManager.RegisterViewWithRegion("ContentRegion1", typeof(Page1));
             //MessageBox.Show(dep.Dep.ToString());
         }

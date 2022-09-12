@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FreeSql" Version="3.2.669" />
+    <PackageReference Include="FreeSql.Provider.MySql" Version="3.2.669" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\PrismDemo.Services.Interfaces\PrismDemo.Services.Interfaces.csproj" />
   </ItemGroup>
 

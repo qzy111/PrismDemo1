@@ -98,6 +98,16 @@
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "FreeSql": {
+              "target": "Package",
+              "version": "[3.2.669, )"
+            },
+            "FreeSql.Provider.MySql": {
+              "target": "Package",
+              "version": "[3.2.669, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

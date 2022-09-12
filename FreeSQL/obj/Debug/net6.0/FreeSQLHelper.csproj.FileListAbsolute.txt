@@ -1,0 +1,12 @@
+D:\Demo\PrismDemo\PrismDemo1\FreeSQL\bin\Debug\net6.0\FreeSQLHelper.deps.json
+D:\Demo\PrismDemo\PrismDemo1\FreeSQL\bin\Debug\net6.0\FreeSQLHelper.dll
+D:\Demo\PrismDemo\PrismDemo1\FreeSQL\bin\Debug\net6.0\FreeSQLHelper.pdb
+D:\Demo\PrismDemo\PrismDemo1\FreeSQL\obj\Debug\net6.0\FreeSQLHelper.csproj.AssemblyReference.cache
+D:\Demo\PrismDemo\PrismDemo1\FreeSQL\obj\Debug\net6.0\FreeSQLHelper.GeneratedMSBuildEditorConfig.editorconfig
+D:\Demo\PrismDemo\PrismDemo1\FreeSQL\obj\Debug\net6.0\FreeSQLHelper.AssemblyInfoInputs.cache
+D:\Demo\PrismDemo\PrismDemo1\FreeSQL\obj\Debug\net6.0\FreeSQLHelper.AssemblyInfo.cs
+D:\Demo\PrismDemo\PrismDemo1\FreeSQL\obj\Debug\net6.0\FreeSQLHelper.csproj.CoreCompileInputs.cache
+D:\Demo\PrismDemo\PrismDemo1\FreeSQL\obj\Debug\net6.0\FreeSQLHelper.dll
+D:\Demo\PrismDemo\PrismDemo1\FreeSQL\obj\Debug\net6.0\refint\FreeSQLHelper.dll
+D:\Demo\PrismDemo\PrismDemo1\FreeSQL\obj\Debug\net6.0\FreeSQLHelper.pdb
+D:\Demo\PrismDemo\PrismDemo1\FreeSQL\obj\Debug\net6.0\ref\FreeSQLHelper.dll

@@ -2090,28 +2090,11 @@
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
       },
-      "PrismDemo.Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Prism.Wpf": "8.1.97"
-        },
-        "compile": {
-          "bin/placeholder/PrismDemo.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/PrismDemo.Core.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WPF"
-        ]
-      },
       "PrismDemo.Modules.ModuleName/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Prism.Wpf": "8.1.97",
-          "PrismDemo.Core": "1.0.0",
           "PrismDemo.Services.Interfaces": "1.0.0"
         },
         "compile": {
@@ -6958,11 +6941,6 @@
         "xunit.runner.visualstudio.2.4.3.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
-    },
-    "PrismDemo.Core/1.0.0": {
-      "type": "project",
-      "path": "../../PrismDemo.Core/PrismDemo.Core.csproj",
-      "msbuildProject": "../../PrismDemo.Core/PrismDemo.Core.csproj"
     },
     "PrismDemo.Modules.ModuleName/1.0.0": {
       "type": "project",
