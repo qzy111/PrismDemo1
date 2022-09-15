@@ -7,6 +7,7 @@
              xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls" 
              xmlns:helix="http://helix-toolkit.org/wpf"
              xmlns:prism="http://prismlibrary.com/"
+             xmlns:i="http://schemas.microsoft.com/xaml/behaviors" xmlns:viewmodels="clr-namespace:PrismDemo.ViewModels"
              prism:ViewModelLocator.AutoWireViewModel="True"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800" Background="White">
@@ -15,11 +16,34 @@
             <Style x:Key="tabitemstyle" TargetType="TabItem" BasedOn="{StaticResource MahApps.Styles.TabItem}">
                 <Setter Property="Background" Value="Transparent" />
                 <Setter Property="Width" Value="200"/>
-                
+
             </Style>
             <Style x:Key="tabcontrolstyle" TargetType="TabControl" BasedOn="{StaticResource MahApps.Styles.TabControl}">
                 <Setter Property="Width" Value="400"/>
             </Style>
+            <Style x:Key="trigger" TargetType="Button" BasedOn="{StaticResource MahApps.Styles.Button.Circle}">
+                <Style.Triggers >
+                    <EventTrigger RoutedEvent="Mouse.MouseEnter">
+                        <EventTrigger.Actions>
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Duration="0:0:0.2" Storyboard.TargetProperty="FontSize" To="22"></DoubleAnimation>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger.Actions>
+                    </EventTrigger>
+                    <EventTrigger RoutedEvent="Mouse.MouseLeave">
+                        <EventTrigger.Actions>
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Duration="0:0:0.2" Storyboard.TargetProperty="FontSize" To="12"></DoubleAnimation>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger.Actions>
+                    </EventTrigger>
+                </Style.Triggers>
+            </Style>
+
         </ResourceDictionary>
     </UserControl.Resources>
     <Grid>
@@ -39,10 +63,23 @@
                                               DropDownWidth="400">
 
                     </mah:ColorPicker>
-                    <Button Style="{DynamicResource MahApps.Styles.Button.Circle}" Height="70" Width="70" Click="Button_Click">点击</Button>
-                    <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Command="{Binding ClickCommd}">命令执行</Button>
+                    <Button Style="{DynamicResource trigger}" Height="70" Width="70" Click="Button_Click">点击</Button>
+                    <Button Style="{DynamicResource MahApps.Styles.Button.Square}" Name="excute" Command="{Binding ClickCommd}">命令执行</Button>
                 </StackPanel>
             </GroupBox>
+            <Canvas>
+                <Rectangle Canvas.Left="10" Canvas.Top="10" Fill="Yellow" Width="40" Height="60"></Rectangle>
+                <Ellipse Canvas.Left="10" Canvas.Top="70" Fill="Blue" Width="80" Height="60">
+                    <i:Interaction.Behaviors>
+                        <local:CustomeBehavior></local:CustomeBehavior>
+                    </i:Interaction.Behaviors>
+                </Ellipse>
+                <Ellipse Canvas.Left="80" Canvas.Top="70" Fill="Red" Width="40" Height="70">
+                    <i:Interaction.Behaviors>
+                        <local:CustomeBehavior></local:CustomeBehavior>
+                    </i:Interaction.Behaviors>
+                </Ellipse>
+            </Canvas>
         </StackPanel>
         <helix:HelixViewport3D Grid.Row="1" Grid.Column="1" x:Name="helixControl" 
                                ShowFrameRate="True" ZoomExtentsWhenLoaded="True" 

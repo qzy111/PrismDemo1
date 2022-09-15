@@ -70,7 +70,7 @@
 
             <MenuItem Header="Accent"
                       ItemContainerStyle="{StaticResource AccentColorMenuItemStyle}"
-                      ItemsSource="{Binding AccentColors, Mode=OneWay}" />
+                      ItemsSource="{Binding AccentColors, Mode=OneWay}"/>
             <MenuItem Header="{Binding MenuTitle}" />
 
         </Menu>
