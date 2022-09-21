@@ -29,6 +29,23 @@ namespace PrismDemo.ViewModels
                 SetProperty(ref name, value);
             }
         }
+        public string firstName="firstName";
+        public string FirstName {
+            get { return firstName; }
+            set
+            {
+                SetProperty(ref firstName, value);
+            }
+        }
+        public string lastName = "lastName";
+        public string LastName
+        {
+            get { return lastName; }
+            set
+            {
+                SetProperty(ref lastName, value);
+            }
+        }
         public List<Category> TaskList { get; set; }
         public Page2ViewModel(IContainerExtension container)
         {

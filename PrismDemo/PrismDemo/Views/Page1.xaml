@@ -27,7 +27,11 @@
                         <EventTrigger.Actions>
                             <BeginStoryboard>
                                 <Storyboard>
-                                    <DoubleAnimation Duration="0:0:0.2" Storyboard.TargetProperty="FontSize" To="22"></DoubleAnimation>
+                                    <DoubleAnimation Duration="0:0:0.2" Storyboard.TargetProperty="FontSize" To="22">
+                                        <DoubleAnimation.EasingFunction>
+                                            <ElasticEase EasingMode="EaseInOut" Oscillations="10"></ElasticEase>
+                                        </DoubleAnimation.EasingFunction>
+                                    </DoubleAnimation>
                                 </Storyboard>
                             </BeginStoryboard>
                         </EventTrigger.Actions>

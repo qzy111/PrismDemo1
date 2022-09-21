@@ -4,11 +4,27 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:PrismDemo.Views"
+             xmlns:local1="clr-namespace:PrismDemo.ViewModels"
              xmlns:prism="http://prismlibrary.com/"
              prism:ViewModelLocator.AutoWireViewModel="True"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <local1:MultiConver x:Key="multic" Symble="/"></local1:MultiConver>
+    </UserControl.Resources>
     <Grid Margin="0 0 0 0">
-        <DataGrid ItemsSource="{Binding TaskList}" Style="{StaticResource MahApps.Styles.DataGrid.Azure}"/>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+        </Grid.RowDefinitions>
+        <DataGrid Grid.Row="0" ItemsSource="{Binding TaskList}" Style="{StaticResource MahApps.Styles.DataGrid.Azure}"/>
+        <TextBox Grid.Row="1">
+            <TextBox.Text>
+                <MultiBinding Converter="{StaticResource multic}">
+                    <Binding Path="FirstName"></Binding>
+                    <Binding Path="LastName"></Binding>
+                </MultiBinding>
+            </TextBox.Text>
+        </TextBox>
     </Grid>
 </UserControl>

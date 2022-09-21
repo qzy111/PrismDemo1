@@ -60,5 +60,23 @@ namespace PrismDemo.Views
             contentControl1.Content = dic_control["page2"];
             //dep.Dep = new Thickness(4);
         }
+
+        private void file3_Click(object sender, RoutedEventArgs e)
+        {
+            if (!dic_control.ContainsKey("page3"))
+            {
+                dic_control.Add("page3", new Page3());
+            }
+            contentControl1.Content = dic_control["page3"];
+        }
+
+        private void file4_Click(object sender, RoutedEventArgs e)
+        {
+            if (!dic_control.ContainsKey("page4"))
+            {
+                dic_control.Add("page4", new Page4());
+            }
+            contentControl1.Content = dic_control["page4"];
+        }
     }
 }

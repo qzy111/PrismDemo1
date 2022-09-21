@@ -77,6 +77,8 @@
         <Menu DockPanel.Dock="Top" Grid.Row="1" Grid.Column="0">
             <MenuItem Name="file" Click="File_Click" Header="页面1"></MenuItem>
             <MenuItem Name="file2" Click="File2_Click" Header="页面2"></MenuItem>
+            <MenuItem Name="file3" Click="file3_Click" Header="页面3"></MenuItem>
+            <MenuItem Name="file4" Click="file4_Click" Header="页面4"></MenuItem>
         </Menu>
         <ContentControl Grid.Row="1" Grid.Column="1" Name="contentControl1" prism:RegionManager.RegionName="ContentRegion1" />
         <!--<load3dmodel:CustomElement x:Name="dep" Dep="123"></load3dmodel:CustomElement>-->
